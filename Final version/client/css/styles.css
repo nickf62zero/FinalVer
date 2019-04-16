@@ -1,0 +1,322 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column input {
+  margin-top: 8px;
+  vertical-align: middle;
+  border-color: grey;
+}
+
+input:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+table {
+    color: white;
+    font-family: 'Righteous', cursive;
+    width: 640px;
+    border-collapse:
+    collapse; border-spacing: 0;
+}
+
+td, th {
+    border: 1px solid transparent;
+    height: 30px;
+    transition: all 0.3s;
+    letter-spacing: 3px;
+}
+
+th {
+      background-image: url("bg.jpg");
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+td {
+    background: #FAFAFA;
+    text-align: left;
+        letter-spacing: 3px;
+}
+
+tr:nth-child(even) td { background: grey;}
+
+tr:nth-child(odd) td {   background-image: url("bg.jpg"); }
+
+tr td:hover {color: black; }
+
+html, input {
+  font-family:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+    'Righteous';
+}
+
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
+
+.pages {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.page {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.login.page {
+  background-image: url("court.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.login.page .form {
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.login.page .form .usernameInput {
+  background-color: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 400px;
+}
+
+.login.page .title {
+  font-size: 200%;
+  text-decoration: underline;
+}
+
+.login.page .usernameInput {
+  font-size: 200%;
+  letter-spacing: 3px;
+}
+
+.login.page .title, .login.page .usernameInput {
+  color: orange;
+  font-weight: 100;
+}
+
+.chat.page {
+  display: none;
+}
+
+
+.messages {
+  font-size: 70%;
+}
+
+.inputMessage {
+  font-size: 100%;
+}
+
+.log {
+  color: white;
+  font-size: 100%;
+  margin: 5px;
+  text-align: center;
+}
+
+.chatArea {
+  height: 100%;
+  border-radius: 25px;
+}
+
+.messages {
+  background: #1b2126;
+	color: #fff;
+	font-size: 12px;
+	height: 150px;
+	line-height: 16px;
+	text-align: left;
+	width: 450px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  border-radius: 1%;
+  overflow-y: scroll;
+}
+
+.message.typing .messageBody {
+  color: orange;
+}
+
+.username {
+  font-weight: 700;
+  overflow: hidden;
+  padding-right: 15px;
+  text-align: right;
+}
+
+.inputMessage {
+  border: 1px solid #ccc;
+	padding: 8px;
+	outline: none;
+	width: 90%;
+  display: inline-block;
+}
+
+.header{
+  @fixedHeight: 40px;
+  background-image: url("bg.jpg");
+  font-size: 14px;
+  line-height: @fixedHeight;
+  height: @fixedHeight;
+  text-indent: 20px;
+  width: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.info{
+float: right;
+padding-right: 400px;
+
+}
+
+body {
+	margin: 0;
+  background-image: url("homepageimg.jpg");
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+.clock {
+    position: absolute;
+    font-family: 'Righteous', cursive;
+    top: 5%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%);
+    color: orange;
+    font-size: 35px;
+    letter-spacing: 7px;
+}
+
+#match{
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  transform: translateX(-50%) translateY(-50%);
+  color: orange;
+  font-size: 35px;
+  font-family: 'Righteous', cursive;
+  letter-spacing: 7px;
+}
+
+.pics{
+  background-color: black;
+}
+
+.hud{
+  padding-left: 3%;
+}
+
+.GameButtons {
+  float: right;
+  padding-right: 63%;
+}
+
+.chata{
+  padding-top: 5%;
+  width: 25%;
+  padding-left: 50px;
+  bottom: 250px;
+}
+
+.usersList{
+
+}
+
+button{
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover {opacity: 0.6}
+
+
+.lock{
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.scoro{
+  float: right;
+  margin-left: 50px;
+  font-size: 24px;
+}
+
+h3{
+  color: orange;
+}
+
+alert {
+  opacity: 1;
+  transition: opacity 0.6s;
+}
+
+// Scaling
+// Breakpoints
+$bp-small: 48em; // 768px
+$bp-medium: 64em; // 1024px
+$bp-large: 85.375em; // 1366px
+$bp-xlarge: 120em; // 1920px
+$bp-xxlarge: 160em; // 2560px
+
+// Media Queries
+$mq-small: "(min-width: #{$bp-small})";
+$mq-medium: "(min-width: #{$bp-medium})";
+$mq-large: "(min-width: #{$bp-large})";
+$mq-xlarge: "(min-width: #{$bp-xlarge})";
+$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
+$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";

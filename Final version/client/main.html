@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel='stylesheet' type='text/css' href='/css/styles.css' />
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <script type="text/javascript" src="/game.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <title>1v1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script>
+    function locked() {
+    alert("locked in");
+    }
+    </script>
+
+    <script>
+    function showTime(){
+        var date = new Date();
+        var h = date.getHours();
+        var m = date.getMinutes();
+        var s = date.getSeconds();
+        var session = "AM";
+
+        if(h == 0){
+            h = 12;
+        }
+
+        if(h > 12){
+            h = h - 12;
+            session = "PM";
+        }
+
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+
+        var time = h + ":" + m + ":" + s + " " + session;
+        document.getElementById("MyClockDisplay").innerText = time;
+        document.getElementById("MyClockDisplay").textContent = time;
+
+        setTimeout(showTime, 1000);
+    }
+    showTime();
+    </script>
+    <script>
+        var scole = "0";
+</script>
+  </head>
+  <body onload="showTime()">
+<script src="/socket.io/socket.io.js"></script>
+<script>
+var socket = io();
+</script>
+<script src="/game.js"></script>
+<ul class="pages">
+  <li class="login page">
+    <div class="form">
+      <h3 class="title">Enter Username</h3>
+      <input class="usernameInput" type="text" maxlength="6" />
+    </div>
+    <li class="hed">
+    <div class="header">
+     <img src="/imgs/logo.png" alt="logo" height="100" width="200">
+     <script>
+     function matching(){
+        document.getElementById("match").innerHTML.replace = (socket.username) + ("User:");
+   }
+     </script>
+     <div id="match">Start a Match!</div>
+         <div id="MyClockDisplay" class="clock"></div
+    </div>
+  </li>
+    <li class="hud">
+      <div class="info">
+      <p id="showData">
+  </p>
+</div>
+      <div class="row">
+        <div class ="column">
+        <input type="image" src="/imgs/curry.png" onclick="playerInfo()" width="250" height="200" border="5px" id="1"  name="pic" value="val1" class="pics"/>
+        <input type="image" src="/imgs/lebron.png" onclick="playerInfo1()" width="250" height="200" border="5px" id="2" name="pic" value="val2" class="pics" />
+        <input type="image" src="/imgs/davis.png" onclick="playerInfo2()" width="250" height="200" border="5px" name="pic" value="val3" class="pics"/>
+      </div>
+      <div class="column">
+        <input type="image" src="/imgs/terry.png" onclick="playerInfo3()" width="250" height="200" border="5px" name="pic" value="val4" class="pics"/>
+        <input type="image" src="/imgs/young.png" onclick="playerInfo4()" width="250" height="200" border="5px" name="pic" value="val5" class="pics"/>
+        <input type="image" src="/imgs/kyrie.png" onclick="playerInfo5()" width="250" height="200" border="5px" name="pic" value="val6" class="pics"/>
+</div>
+      </div>
+    </li>
+    <li class="game">
+      </div>
+      <div class='GameButtons'>
+         <button class='joinGame' placeholder="Join Game"/>Play Match</button>
+          <button class='leaveGame' placeholder="Leave Game"/>Leave Match</button>
+          <button onclick="locked" placeholder="Lock In"/>Lock In</button>
+          <h3 class="scoro">Score: <script type="text/javascript">document.write(scole)</script></h3>
+        </div>
+    </li>
+  <li class="chata">
+    <h3 class="con">Console</h3>
+    <div class="chatArea">
+      <ul class="messages"></ul>
+    </div>
+  <input class="inputMessage" placeholder="Send a Message..."/>
+    <li class="usersList">
+  <div class="usersList">
+    <ul class="Users"></ul>
+      </div>
+  </li>
+    </li>
+  </li>
+</ul>
+   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "materialize-css": "^1.0.0-rc.2",
+    "nodemon": "^1.18.10",
+    "socket.io": "^1.7.4"
+  },
+  "engines": {
+    "node": "4.1.x"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
